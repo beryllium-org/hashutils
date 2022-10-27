@@ -1,6 +1,6 @@
 {
     "JPKG_minimum_version": 0,
-    "package_name": "package",
+    "package_name": "hashutils",
     "version": [1, 0, 0],
     "dependencies": [],
     "conflicts": [],
