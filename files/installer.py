@@ -16,6 +16,8 @@ for filee in [
 
 # bins
 for filee in [
+    "crc32.lja",
+    "crc32.py",
     "md5sum.lja",
     "md5sum.py",
     "sha1sum.lja",
