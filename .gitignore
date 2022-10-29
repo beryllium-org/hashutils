@@ -5,16 +5,4 @@ files/_sha224.mpy
 files/_sha256.mpy
 files/_sha384.mpy
 files/_sha512.mpy
-files/md5sum.lja
-files/md5sum.py
-files/sha1sum.lja
-files/sha1sum.py
-files/sha224sum.lja
-files/sha224sum.py
-files/sha256sum.lja
-files/sha256sum.py
-files/sha384sum.lja
-files/sha384sum.py
-files/sha512sum.lja
-files/sha512sum.py
 hashutils.jpk
