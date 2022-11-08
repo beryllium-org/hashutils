@@ -1,6 +1,6 @@
 # adafruit_hashlib
-ljinux.api.var("argj", f"mkdir &/lib/adafruit_hashlib")
-ljinux.based.command.fpexecc([None, "/bin/mkdir.py"])
+ljinux.api.setvar("argj", f"mkdir &/lib/adafruit_hashlib")
+ljinux.based.command.fpexec("/bin/mkdir.py")
 for filee in [
     "__init__.mpy",
     "_md5.mpy",
@@ -10,8 +10,8 @@ for filee in [
     "_sha384.mpy",
     "_sha512.mpy",
 ]:
-    ljinux.api.var("argj", f"cp {filee} &/lib/adafruit_hashlib/{filee}")
-    ljinux.based.command.fpexecc([None, "/bin/cp.py"])
+    ljinux.api.setvar("argj", f"cp {filee} &/lib/adafruit_hashlib/{filee}")
+    ljinux.based.command.fpexec("/bin/cp.py")
     del filee
 
 # bins
@@ -31,8 +31,8 @@ for filee in [
     "sha512sum.lja",
     "sha512sum.py",
 ]:
-    ljinux.api.var("argj", f"cp {filee} /bin/{filee}")
-    ljinux.based.command.fpexecc([None, "/bin/cp.py"])
+    ljinux.api.setvar("argj", f"cp {filee} /bin/{filee}")
+    ljinux.based.command.fpexec("/bin/cp.py")
     del filee
 
-ljinux.api.var("return", "0")
+ljinux.api.setvar("return", "0")
