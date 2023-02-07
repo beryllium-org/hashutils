@@ -1,7 +1,6 @@
 # adafruit_hashlib
-hl = " &/lib/adafruit_hashlib/"
-ljinux.api.setvar(
-    "argj",
+hl = " /lib/adafruit_hashlib/"
+ljinux.based.run(
     "rm"
     + hl
     + "__init__.mpy"
@@ -18,16 +17,13 @@ ljinux.api.setvar(
     + hl
     + "_sha512.mpy",
 )
-ljinux.based.command.fpexec("/bin/rm.py")
 del hl
 
-ljinux.api.setvar("argj", f"rmdir &/lib/adafruit_hashlib")
-ljinux.based.command.fpexec("/bin/rmdir.py")
+ljinux.based.run("rmdir /lib/adafruit_hashlib")
 
 # bins
 bl = " /bin/"
-ljinux.api.setvar(
-    "argj",
+ljinux.based.run(
     "rm"
     + bl
     + "md5sum.lja"
@@ -54,7 +50,6 @@ ljinux.api.setvar(
     + bl
     + "sha512sum.py",
 )
-ljinux.based.command.fpexec("/bin/rm.py")
 del bl
 
 ljinux.api.setvar("return", "0")
