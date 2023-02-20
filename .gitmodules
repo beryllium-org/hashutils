@@ -4,3 +4,6 @@
 [submodule "submodules/Adafruit_CircuitPython_hashlib"]
 	path = submodules/Adafruit_CircuitPython_hashlib
 	url = https://github.com/adafruit/Adafruit_CircuitPython_hashlib
+[submodule "submodules/CircuitMPY"]
+	path = submodules/CircuitMPY
+	url = https://github.com/bill88t/CircuitMPY
