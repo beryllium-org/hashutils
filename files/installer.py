@@ -1,4 +1,3 @@
-# adafruit_hashlib
 ljinux.api.setvar("argj", ". /lib/adafruit_hashlib")
 ljinux.based.command.fpexec("/bin/mkdir.py")
 for filee in [
@@ -13,8 +12,6 @@ for filee in [
     ljinux.api.setvar("argj", f". {filee} /lib/adafruit_hashlib/{filee}")
     ljinux.based.command.fpexec("/bin/cp.py")
     del filee
-
-# bins
 for filee in [
     "crc32.lja",
     "crc32.py",
@@ -34,6 +31,5 @@ for filee in [
     ljinux.api.setvar("argj", f". {filee} /bin/{filee}")
     ljinux.based.command.fpexec("/bin/cp.py")
     del filee
-
 ljinux.api.setvar("argj")
 ljinux.api.setvar("return", "0")
