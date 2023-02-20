@@ -6,3 +6,4 @@ files/_sha256.mpy
 files/_sha384.mpy
 files/_sha512.mpy
 hashutils.jpk
+mpy-cross-*
