@@ -1,23 +1,25 @@
-opts = ljinux.api.xarg()
+vr("opts", be.api.xarg())
 
-try:
-    if len(opts["w"]) > 0:
-        with open(ljinux.api.betterpath(opts["w"][0]), "rb") as f:
-            dataa = f.read()
-            from binascii import crc32
+if len(vr("opts")["w"]):
+    from binascii import crc32
 
-            dataa = hex(crc32(dataa))[2:]
-            del crc32
-            ljinux.based.user_vars["return"] = str(dataa) + " " + opts["w"][0]
-            del dataa
-            print(ljinux.based.user_vars["return"])
-    else:
-        ljinux.based.error(1)
-        ljinux.based.user_vars["return"] = "1"
+    be.api.setvar("return", "")
+    for pv[get_pid()]["i"] in vr("opts")["w"]:
+        with be.api.fopen(vr("i"), "rb") as pv[get_pid()]["f"]:
+            if vr("f") is not None:
+                vr("data", vr("f").read())
+                vr("data", hex(crc32(vr("data")))[2:])
 
-
-except OSError:
-    ljinux.based.error(4, ljinux.based.user_vars["argj"].split()[1])
-    ljinux.based.user_vars["return"] = "1"
-
-del opts
+                be.based.user_vars["return"] += str(vr("data")) + " " + vr("i") + "\n"
+                vrd("data")
+            else:
+                be.based.error(4, vr("i"))
+                be.api.setvar("return", "1")
+                break
+    if be.api.getvar("return") != "1":
+        be.api.setvar("return", be.api.getvar("return")[:-1])
+        term.write(be.api.getvar("return"))
+    del crc32
+else:
+    be.based.error(1)
+    be.api.setvar("return", "1")

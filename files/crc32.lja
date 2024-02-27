@@ -1,1 +1,1 @@
-fpexec /bin/crc32.py
+fpexec /bin/hashutils/crc32.py

@@ -1,1 +1,1 @@
-fpexec /bin/sha224sum.py
+fpexec /bin/hashutils/sha224sum.py

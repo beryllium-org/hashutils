@@ -1,1 +1,1 @@
-fpexec /bin/sha384sum.py
+fpexec /bin/hashutils/sha384sum.py

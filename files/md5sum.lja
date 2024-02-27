@@ -1,1 +1,1 @@
-fpexec /bin/md5sum.py
+fpexec /bin/hashutils/md5sum.py
