@@ -5,7 +5,7 @@ if len(vr("opts")["w"]):
 
     be.api.setvar("return", "")
     for pv[get_pid()]["i"] in vr("opts")["w"]:
-        with be.api.fopen(vr("i"), "rb") as pv[get_pid()]["f"]:
+        with be.api.fs.open(vr("i"), "rb") as pv[get_pid()]["f"]:
             if vr("f") is not None:
                 vr("data", vr("f").read())
                 vr("data", hex(crc32(vr("data")))[2:])
