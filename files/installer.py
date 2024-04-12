@@ -24,11 +24,17 @@ for pv[get_pid()]["f"] in [
 be.based.run("mkdir /bin/hashutils")
 for pv[get_pid()]["f"] in [
     "crc32.py",
+    "crc32subscript.py",
     "md5sum.py",
+    "md5subscript.py",
     "sha1sum.py",
+    "sha1subscript.py",
     "sha224sum.py",
+    "sha224subscript.py",
     "sha256sum.py",
+    "sha256subscript.py",
     "sha384sum.py",
+    "sha384subscript.py",
     "sha512sum.py",
     "sha512subscript.py",
 ]:
