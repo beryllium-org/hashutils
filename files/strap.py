@@ -38,5 +38,6 @@ for i in [
     "sha256sum.py",
     "sha384sum.py",
     "sha512sum.py",
+    "sha512subscript.py",
 ]:
     shutil.copy(i, path.join(root, "bin/hashutils", i))

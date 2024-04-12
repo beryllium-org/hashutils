@@ -30,6 +30,7 @@ for pv[get_pid()]["f"] in [
     "sha256sum.py",
     "sha384sum.py",
     "sha512sum.py",
+    "sha512subscript.py",
 ]:
     be.based.run("cp " + vr("f") + " /bin/hashutils/" + vr("f"))
 be.api.setvar("return", "0")
