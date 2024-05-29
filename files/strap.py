@@ -12,7 +12,7 @@ for i in [
     "_sha384.mpy",
     "_sha512.mpy",
 ]:
-    shutil.copy(i, path.join(root, "lib/adafruit_hashlib", i))
+    shutil.copyfile(i, path.join(root, "lib/adafruit_hashlib", i))
 
 for i in [
     "crc32.lja",
@@ -23,7 +23,7 @@ for i in [
     "sha384sum.lja",
     "sha512sum.lja",
 ]:
-    shutil.copy(i, path.join(root, "bin", i))
+    shutil.copyfile(i, path.join(root, "bin", i))
 
 try:
     mkdir(path.join(root, "bin/hashutils"))
@@ -46,4 +46,4 @@ for i in [
     "sha512sum.py",
     "sha512subscript.py",
 ]:
-    shutil.copy(i, path.join(root, "bin/hashutils", i))
+    shutil.copyfile(i, path.join(root, "bin/hashutils", i))
